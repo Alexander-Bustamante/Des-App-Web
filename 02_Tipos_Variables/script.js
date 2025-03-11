@@ -2,6 +2,8 @@ console.log("Funcionando Correctamente...")
 
 //Creacion de variables//
 
+let numero = 0; //Numerico
+
 let decimal = 2.5; //Numerico Float//
 
 let texto = "Hola"; //String//
