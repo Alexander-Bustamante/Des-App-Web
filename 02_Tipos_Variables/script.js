@@ -2,7 +2,7 @@ console.log("Funcionando Correctamente...")
 
 //Creacion de variables//
 
-let numero = 0; //Numerico
+let numero = 0; //Numerico o INT
 
 let decimal = 2.5; //Numerico Float//
 
