@@ -45,8 +45,7 @@ function objeto(){
     let objeto = {
     "nombre" : "Pepito",
     "edad" : 20,
-    }; //Objeto o diccionario//
-
+    };  //Objeto o diccionario//
     alert(objeto.nombre);
 }
 
