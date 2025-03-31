@@ -38,9 +38,11 @@ function sumar_numeros() {
 function multiplos_del_dos() {
     let num_ingresado = parseInt(prompt("Ingrese un numero"))
     let numeros_array = []
+    let multiplos_dos = 0
 
-    for ( multiplos_dos = 0; multiplos_dos < num_ingresado; multiplos_dos += 2){
-        numeros_array.push(multiplos_dos);
+    for (let i = 0; i <= num_ingresado; i += 2){
+        numeros_array.push(multiplos_dos)
+        multiplos_dos += 2
     }
     alert(`Los numeros multiplos son: ${numeros_array.join(" ")}`)
 }
