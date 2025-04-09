@@ -124,11 +124,104 @@ El resultado es ${operaciones(operacion)}`)
 function sum_pares() {
     let num_ingresado = parseInt(prompt("Ingrese la cantidad de numeros que desea sumar"))
     let resultado = 0
+    let numeros_extras = []
 
     for (let i = 1; i <= num_ingresado; i++){
-        let num = parseInt(prompt(`Ingrese el ${i} numero`))
-        
+        let num = parseInt(prompt(`Ingrese el ${i}° numero`))
+        numeros_extras.push(num)
+        if (num % 2 === 0){
+            resultado += num
+        }
     } 
-
+    alert(`Los numeros ingresados son: ${numeros_extras.join(" - ")}
+El resultado de la suma de solo los numeros pares ingresados es: ${resultado}`)
 }
 // Ejercicio 7: Sumar N numeros pares //
+
+
+// Ejercicio 8: Sumar los N primeros numeros pares //
+
+function sum_primeros_pares() {
+    let num_ingresado = parseInt(prompt("Ingrese un numero"))
+    let array_pares = []
+    let resultado = 0
+
+    for (let i = 1; i <= num_ingresado * 2; i++) {
+        if (i % 2 === 0){
+            array_pares.push(i)
+            resultado += i
+        }
+    }
+    alert(`Los numeros pares hasta el numero ingresado son: ${array_pares.join(" - ")}
+Y la suma de estos es ${resultado}`)
+}
+
+// Ejercicio 8: Sumar los N primeros numeros pares //
+
+
+// Ejercicio 9: Sumar N numeros impares //
+
+function sum_impares() {
+    let num_ingresado = parseInt(prompt("Ingrese la cantidad de numeros que desea sumar"))
+    let resultado = 0
+    let numeros_extras = []
+
+    for (let i = 1; i <= num_ingresado; i++){
+        let num = parseInt(prompt(`Ingrese el ${i}° numero`))
+        numeros_extras.push(num)
+        if (num % 2 !== 0){
+            resultado += num
+        }
+    } 
+    alert(`Los numeros ingresados son: ${numeros_extras.join(" - ")}
+El resultado de la suma de solo los numeros impares ingresados es: ${resultado}`)
+}
+
+// Ejercicio 9: Sumar N numeros impares //
+
+
+// Ejercicio 10: Sumar los N primeros numeros impares //
+
+function sum_primeros_impares() {
+    let num_ingresado = parseInt(prompt("Ingrese un numero"))
+    let array_impares = []
+    let resultado = 0
+
+    for (let i = 1; i <= num_ingresado * 2; i++) {
+        if (i % 2 !== 0){
+            array_impares.push(i)
+            resultado += i
+        }
+    }
+    alert(`Los numeros impares hasta el numero ingresado son: ${array_impares.join(" - ")}
+Y la suma de estos es ${resultado}`)
+}
+
+// Ejercicio 10: Sumar los N primeros numeros impares //
+
+
+// Ejercicio 11: Sumar los N primeros multiplos de 3 //
+
+function multiplos_del_tres() {
+    let num_ingresado = parseInt(prompt("Ingrese cuantos de los primeros multiplos de 3 desea sumar"))
+    let numeros_array = []
+    let multiplos_tres = 0
+    let resultado = 0
+    let multiplo = 1
+
+    for (let i = 0; i <= num_ingresado * 3; i += 3){
+        numeros_array.push(multiplos_tres)
+        multiplos_tres += 3
+    }
+    
+    for (let i = 1; i <= num_ingresado; i++){
+        let num = i * 3
+        multiplo ++
+        resultado += num
+    }
+
+    alert(`Los ${num_ingresado}° multiplos de 3 son: ${numeros_array.join(" - ")}
+Y la suma de estos es: ${resultado}`)
+}
+
+// Ejercicio 11: Sumar los N primeros multiplos de 3 //
