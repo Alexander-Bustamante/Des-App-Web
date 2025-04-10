@@ -220,8 +220,132 @@ function multiplos_del_tres() {
         resultado += num
     }
 
-    alert(`Los ${num_ingresado}° multiplos de 3 son: ${numeros_array.join(" - ")}
+    alert(`Los ${num_ingresado} primeros multiplos de 3 son: ${numeros_array.join(" - ")}
 Y la suma de estos es: ${resultado}`)
 }
 
 // Ejercicio 11: Sumar los N primeros multiplos de 3 //
+
+
+// Ejercicio 12: Factorial de numero ingresado //
+
+function factorial_n() {
+    let num_ingresado = parseInt(prompt("Ingrese el numero para falcular su factorial"))
+    let resultado = 1
+
+    for (let i = 1; i <= num_ingresado; i++){
+        resultado *= i
+    }
+    alert(`El factorial del numero ingresado es: ${resultado}`)
+}
+
+// Ejercicio 12: Factorial de numero ingresado //
+
+
+// Ejercicio 13: Conversion de grados Celsius a Fahrenheit //
+
+function celsius_a_fahrenheit() {
+    let celsius = parseInt(prompt("Ingrese una temperatura en grados celsius"))
+    let fahrenheit = 0 + ((celsius * (9/5)) + 32)
+
+    alert(`Usted ingreso la temperatura de ${celsius}° grados Celsius
+lo cual equivale a ${fahrenheit}° grados Fahrenheit`)
+}
+
+// Ejercicio 13: Conversion de grados Celsius a Fahrenheit //
+
+// Ejercicio 14: Buscar la palabra más larga de una cadema de texto //
+
+function palabra_mas_larga() {
+    let cadena = prompt("Ingrese una cadena de texto")
+    let palabras = cadena.split(" ")
+    let palabra_larga = ""
+
+    for(let i = 0; i < palabras.length ; i++) {
+        if (palabras[i].length > palabra_larga.length){
+            palabra_larga = palabras[i]
+        }
+    }
+
+    alert(`La frase que ingreso es: ${cadena}
+La palabra más larga de la frase que ingreso es: ${palabra_larga}`)
+}
+
+// Ejercicio 14: Buscar la palabra más larga de una cadema de texto //
+
+
+// Ejercicio 15: Imprimir todos los numeros primos hasta el numero ingresado //
+
+function generador_Numeros_Primos() {
+    let limite = parseInt(prompt("Ingrese un numero limite para la impresión: "))
+    let array_Primos = []
+
+    if (limite === 0 || limite === 1 || limite < 0) {
+        alert("Ingrese un valor valido")
+    }
+
+    for(let i = 2; i < limite + 1; i++) {
+        if(es_Primo(i)) {
+            array_Primos.push(i)
+        }
+    }
+
+    function es_Primo(numero) {
+        for(let j = 2; j < numero; j++) {
+            if(numero % j === 0) {
+                return false;
+            }
+        }
+        return numero !== 1;
+    }
+
+    if(limite === 0 || limite === 1 || limite < 0) {
+        alert("No se ha generado nada")
+    } else {
+        alert(`Los numeros primos al numero que ingresaste son: ${array_Primos.join(" - ")}`)
+    }
+}
+
+// Ejercicio 15: Imprimir todos los numeros primos hasta el numero ingresado //
+
+
+
+// Ejercicio 16: Contador de cuantas veces se repite cada letra//
+
+function contar_letras() {
+    let cadena = prompt("Escribe un texto:");
+    let repeticiones = {};
+    
+    for (let i = 0; i < cadena.length; i++) {
+        repeticiones[i] = (repeticiones[i] || 0) + 1;
+    }
+
+    alert("Cantidad de repeticiones: ")
+    for (let i = 0; i < repeticiones.length; i++) {
+
+        alert(`${repeticiones[i]}`);
+    }
+}
+
+// Ejercicio 16: Contador de cuantas veces se repite cada letra//
+
+
+// Ejercicio 17: Impresion de solo los numeros pares //
+
+function mostrar_pares() {
+    let num_ingresado = parseInt(prompt("Ingrese la cantidad de numeros que desea sumar"))
+    let numeros_extras = []
+    let numeros_pares = []
+
+    for (let i = 1; i <= num_ingresado; i++){
+        let num = parseInt(prompt(`Ingrese el ${i}° numero`))
+        numeros_extras.push(num)
+        if (num % 2 === 0){
+            resultado += num
+        }
+    } 
+    alert(`Los numeros ingresados son: ${numeros_extras.join(" - ")}
+El resultado de la suma de solo los numeros pares ingresados es: ${resultado}`)
+}
+
+// Ejercicio 17: Impresion de solo los numeros pares //
