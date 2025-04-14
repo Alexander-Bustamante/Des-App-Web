@@ -333,7 +333,7 @@ function contar_letras() {
 // Ejercicio 17: Impresion de solo los numeros pares //
 
 function mostrar_pares() {
-    let num_ingresado = parseInt(prompt("Ingrese la cantidad de numeros que desea sumar"))
+    let num_ingresado = parseInt(prompt("Ingrese la cantidad de numeros a ingresar"))
     let numeros_extras = []
     let numeros_pares = []
 
@@ -341,11 +341,11 @@ function mostrar_pares() {
         let num = parseInt(prompt(`Ingrese el ${i}° numero`))
         numeros_extras.push(num)
         if (num % 2 === 0){
-            resultado += num
+            numeros_pares.push(num)
         }
     } 
     alert(`Los numeros ingresados son: ${numeros_extras.join(" - ")}
-El resultado de la suma de solo los numeros pares ingresados es: ${resultado}`)
+Los numeros pares son: ${numeros_pares.join(" - ")}`)
 }
 
 // Ejercicio 17: Impresion de solo los numeros pares //
