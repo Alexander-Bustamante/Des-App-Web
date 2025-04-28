@@ -116,6 +116,23 @@ main{
 
 #perfil-info a img{
     width: 3vh;
+    margin-right: 0.5vh;
+}
+
+#perfil-info a{
+    font-size: 2vh;
+}
+
+#perfil-info h2{
+    font-size: 3.5vh;
+}
+
+#perfil-info h3{
+    font-size: 2.5vh;
+}
+
+#perfil-info p{
+    font-size: 2vh;
 }
 
 #perfil-info a{
@@ -142,6 +159,7 @@ main{
     border: solid 3px #3798DC;
     color: #3798DC;
     border-radius: 5px;
+    font-size: 2vh;
 }
 
 .soli-conexion button:hover, .your-connect button:hover{
@@ -152,6 +170,7 @@ main{
     border: solid 3px #3798DC;
     color: #3798DC;
     border-radius: 5px;
+    font-size: 2vh;
 }
 
 .soli-conexion p, .your-connect p{
