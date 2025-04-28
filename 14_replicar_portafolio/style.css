@@ -14,17 +14,22 @@ body{
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    padding: 1vh 4vh 1vh 4vh;
+    padding: 1vh 4vh;
     font-size: 2.5vh;
     font-family: sans-serif;
+}
+
+.nav-bar{
+    width: 96%;
 }
 
 .perfil-text{
     display: flex;
     align-items: center;
-    margin-right: 125vh;
+    margin-right: auto;
+    margin-left: 2vh;
     color: #ffffff;
     font-size: 4vh;
     font-family: sans-serif;
@@ -34,6 +39,7 @@ body{
 .nav-bar-item {
     padding: 3vh 4vh;
     background-color: #2C3E50;
+
 }
 
 .cerrar-sesion{
@@ -55,6 +61,7 @@ main{
     align-content: center;
     display: flex;
     padding-top: 7vh;
+    flex-wrap: wrap;
 }
 
 #perfil-info{
@@ -72,26 +79,39 @@ main{
     background: linear-gradient(180deg,rgba(55, 152, 220, 1) 30%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 100%);
 }
 
+#perfil-info h3{
+    color: #727272;
+}
+
 .solicitudes{
     width: 65vh;
-    height: 25vh;
     border-radius: 1.5vh;
     background-color: #ffffff;
     box-shadow: 0 0 5px 3px #cfcfcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0 2vh 0;
 }
 
 .conexiones{
     width: 65vh;
-    height: 40vh;
     border-radius: 1.5vh;
     margin-top: 5vh;
     background-color: #ffffff;
     box-shadow: 0 0 5px 3px #cfcfcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0 2vh 0;
 }
 
 .foto_perfil{
     width: 20vh;
-    filter: drop-shadow(0px 0px 5px);
+    padding: 0.5vh;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-top: 5vh;
 }
 
 #perfil-info a img{
@@ -104,4 +124,80 @@ main{
     align-items: center;
     color: #3798DC;
     font-weight: bold;
+}
+
+.soli-conexion, .your-connect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    width: 60vh;
+}
+
+.soli-conexion button, .your-connect button{
+    height: 4vh;
+    width: 12vh;
+    background-color: #ffffff;
+    border: solid 3px #3798DC;
+    color: #3798DC;
+    border-radius: 5px;
+}
+
+.soli-conexion button:hover, .your-connect button:hover{
+    cursor: pointer;
+    height: 4vh;
+    width: 12vh;
+    background-color: #ffffff;
+    border: solid 3px #3798DC;
+    color: #3798DC;
+    border-radius: 5px;
+}
+
+.soli-conexion p, .your-connect p{
+    font-size: 3vh;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.info-user{
+    display: flex;
+    flex-direction: row;
+    width: 60vh;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+.profile-user a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.profile-user img{
+    height: 6vh;
+    margin-right: 4vh;
+    margin-left: 1vh;
+}
+
+.check-or-delete{
+    display: flex;
+    flex-direction: row;
+}
+
+.check-or-delete img{
+    height: 3.8vh;
+    margin-right: 2vh;
+}
+
+.profile-user{
+    width: 60vh;
+    height: 10vh;
 }
