@@ -6,6 +6,7 @@
 
 body{
     padding: 0 3vh;
+    outline: solid white 3vh;
 }
 
 div{
@@ -78,7 +79,7 @@ div{
 
 .c2x5{
     flex: 1;
-    height: 50vh;
+    height: 47vh;
     width: 10vh;
 }
 
@@ -91,7 +92,9 @@ div{
 .container-c2x4{
     flex: 2;
     display: flex;
+    height: 47vh;
     flex-direction: column;
+    margin-bottom: 3vh;
 }
 
 .right-all{
@@ -111,16 +114,23 @@ div{
 
 
 .c1x2{
-    height: 30vh;
+    height: 27vh;
     flex: 1;
+    margin-top: 3vh;
+    outline: solid white ;
 }
 
 .c3x7{
-    height: 70vh;
+    height: 67vh;
     flex: 1;
 }
 
 .c3x5{
     flex: 1;
     height: 50vh;
+    margin-top: 3vh;
+}
+
+.c1x5{
+    outline: solid white 2.5vh;
 }
