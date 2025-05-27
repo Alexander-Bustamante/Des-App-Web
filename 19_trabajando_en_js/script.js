@@ -21,7 +21,7 @@ function agregar_participántes() {
 function vender(){
     let productos_iniciales = ["manzana", "pan", "leche"]
 
-    for (let i = 1; i < 5; i++){
+    for (let i = 1; i <= 5; i++){
         if (productos_iniciales.length > 0){
             producto_vendido = alert(`Producto vendido: ${productos_iniciales[productos_iniciales.length - 1]}`)
             productos_iniciales.pop()
@@ -44,5 +44,5 @@ function vender(){
 
     productos_iniciales = nuevos_productos
 
-    alert(`Los productos agregados fueron. ${productos_iniciales.join(" - ")}`)
+    alert(`Los productos agregados fueron: ${productos_iniciales.join(" - ")}.`)
 }
