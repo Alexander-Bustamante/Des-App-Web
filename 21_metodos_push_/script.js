@@ -31,7 +31,7 @@ function mostrar_lista_compra(){
 }
 
 function agregar_elemento2() {
-    const input = document.getElementById("lista2").value;
+    const input = document.getElementById("lista2");
     const valor = input.value.trim(); // Guardo valor sin espacios extras //
 
     if (valor === ""){
@@ -59,9 +59,68 @@ function eliminar_ultimo_elemento(){
 
 let colores = []
 
-function agregar_al_inicio(){
-    let agregar_color = document.getElementById("insert-color").value;
-    carrito.unshift(agregar_color)
-    document.getElementById("colors").innerHTML =
-    `Los colores son: <br>-${colores.join("<br>-")}`;
+function mostrar_lista_colores(){
+    const lista = document.getElementById("resultado3");
+    lista.innerHTML = ""; // Limpiar antes de mostrar //
+
+    for (let i = 0; i < colores.length; i++){
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between aling-items-center mb-2  "
+        li.textContent = `-${colores[i]}`
+        lista.appendChild(li)
+    }
+}
+
+function agregar_inicio() {
+    const input = document.getElementById("lista3");
+    const valor = input.value.trim(); // Guardo valor sin espacios extras //
+
+    if (valor === ""){
+        return;
+    };
+
+    colores.unshift(valor); //Agregar valor al inicio //
+    input.value = "";
+    input.focus(); // Agregamos foco hacia el input //
+
+    mostrar_lista_colores()
+}
+
+// Ejercicio 4: Quitar al inicio //
+
+let colores2 = []
+
+function mostrar_lista_colores2(){
+    const lista = document.getElementById("resultado4");
+    lista.innerHTML = ""; // Limpiar antes de mostrar //
+
+    for (let i = 0; i < colores2.length; i++){
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between aling-items-center mb-2  "
+        li.textContent = `-${colores2[i]}`
+        lista.appendChild(li)
+    }
+}
+
+function agregar_inicio2() {
+    const input = document.getElementById("lista4");
+    const valor = input.value.trim(); // Guardo valor sin espacios extras //
+
+    if (valor === ""){
+        return;
+    };
+
+    colores2.unshift(valor); //Agregar valor al inicio //
+    input.value = "";
+    input.focus(); // Agregamos foco hacia el input //
+
+    mostrar_lista_colores2()
+}
+
+function eliminar_primer_elemento(){
+    if (colores2.length > 0){
+        colores2.shift();
+    };
+
+    mostrar_lista_colores2()
 }
