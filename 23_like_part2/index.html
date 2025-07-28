@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Like parte 2</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Network</h1>
+    </nav>
+    <div class="feed">Your Feed</div>
+    <main>
+        <section class="left">
+            <div class="profile card">
+                <img src="img/profile_avatar.png"> 
+                <a href="#">Add an avatar</a>
+                <p>James doe</p>
+            </div>
+        </section>
+        <section class="right">
+            <div class="neil card">
+                <div class="info">
+                    <h2>Neil M</h2>
+                    <div>   
+                        <span id="like1" >9 like(s)</span>
+                        <button class="like" onclick="sumar_likes()">Like</button>
+                    </div>
+                </div>
+                <div class="extra_info">
+                    <p>I Just up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+                </div>
+            </div>
+            <div class="nicole card">
+                <div class="info">
+                    <h2>Nichole K</h2>
+                    <div>
+                        <p id="like2">12 like(s)</p>
+                        <button class="like"onclick="sumar_likes2()">Like</button>
+                    </div>
+                </div>
+                <div class="extra_info">
+                    <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+                </div>
+            </div>
+            <div class="jim card">
+                <div class="info">
+                    <h2>Jim R</h2>
+                    <div>
+                        <p id="like3">9 like(s)</p>
+                        <button class="like" id="like3" onclick="sumar_likes3()">Like</button>
+                    </div>
+                </div>
+                <div class="extra_info">
+                    <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

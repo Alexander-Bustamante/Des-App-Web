@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100vh;
+    padding: 1vh 2vh;
+}
+
+.feed{
+    margin: 3vh 0;
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    gap: 4vh;
+}
+
+.card{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 3px solid black;
+}
+
+.left{
+    flex: 1;
+}
+
+.right{
+    flex: 3;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.5vh 0;
+    gap: 3vh;
+}
+
+.profile img{
+    width: 12vh;
+}
+
+.profile p{
+    font-size: 4vh;
+}
+
+.neil{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 4vh;
+    gap: 4.5vh;
+}
+
+.nicole{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 4vh;
+    gap: 4.5vh;
+}
+
+.jim{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 4vh;
+    gap: 4.5vh;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vh;
+}
+
+.like{
+    background-color: #FFD966;
+    font-size: 3vh;
+    border: 3px solid black;
+    padding: 0.9vh 2.3vh;
+    box-shadow: 3px 3px black;
+}
+
+.like:hover{
+    cursor: pointer;
+}
