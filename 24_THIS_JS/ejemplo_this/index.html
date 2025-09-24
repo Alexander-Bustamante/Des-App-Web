@@ -7,36 +7,36 @@
     <link rel="stylesheet" href="static/CSS/style.css">
 </head>
 <body>
-    <header>
+    <nav>
         <h1>Dojonary</h1>
-        <input type="text" value="Search" id="search">
-        <button>Login</button>
-    </header>
+        <input type="text" placeholder="Search" id="search">
+        <button onclick="TurnOff(this)">Login</button>
+    </nav>
     <main class="container-page">
         <section class="left">
-            <section class="top">
+            <section class="top card">
                 <div class="info-post">
                     <h2>Ninja</h2>
                     <h3>noun</h3>
                     <p>Plural: ninjas</p>
-                    <button class="post-botton">13 likes</button>
+                    <button onclick="Like(this)" class="post-botton">13 likes</button>
                 </div>
                 <p>A practitioner skilled in the <a href="#">Japanase</a> art of <a href="#">ninjutsu</a></p>
             </section>
-            <section class="bottom">
+            <section class="bottom card">
                 <div class="info-post">
                     <h2>Ninja</h2>
                     <h3>noun</h3>
                     <p>Plural: ninjas</p>
-                    <button class="post-botton">13 likes</button>
+                    <button onclick="Like(this)" class="post-botton">13 likes</button>
                 </div>
-                <p>A practitioner skilled in the <a href="#">Japanase</a> art of <a href="#">ninjutsu</a></p>
+                <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
             </section>
         </section>
         <section class="right">
             <div class="definition">
-                <h2>Dojonary is defined by you</h2>
-                <button class="a-definition">Add Definition</button>
+                <h2>Dojonary is defined by YOU</h2>
+                <button onclick="Hide(this)" class="a-definition">Add Definition</button>
             </div>
         </section>
     </main>
