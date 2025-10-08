@@ -20,7 +20,8 @@
 
     <main>
         <section class="left">
-            <video src="static/RESOURCE/VIDEO/Saber Alter vs Berserker Fate_Stay Night Heaven's Feel II.mp4" controls autoplay></video>
+            <video id="main_video" src="static/RESOURCE/VIDEO/Saber Alter vs Berserker Fate_Stay Night Heaven's Feel II.mp4" 
+            controls autoplay></video>
             <div class="info_video">
                 <div class="info-post">
                     <div>
@@ -41,30 +42,33 @@
             <hr/>
             <div class="video-small">
                 <video class="vid-s" src="static/RESOURCE/VIDEO/Gilgamesh vs Enkidu.mp4" alt="video placeholder" controls
-                onmouseover="this.play()"
-                onmouseout="this.pause()"></video>
+                onclick="cambiar_video(this)"></video>
                 <span class="video-title">Gilgamesh vs Enkidu</span>
             </div>
             <div class="video-small">
                 <video class="vid-s" src="static/RESOURCE/VIDEO/Keanu Bicol - i won't run.mp4" alt="video placeholder" controls
                 onmouseover="this.play()"
-                onmouseout="this.pause()"></video>
+                onmouseout="this.pause()"
+                onclick="cambiar_video(this)"></video>
                 <span class="video-title">Keanu Bicol - i won't run</span>
             </div>
             <div class="video-small">
                 <video class="vid-s" src="static/RESOURCE/VIDEO/Tachyon Finding The Limit.mp4" alt="video placeholder" controls
                 onmouseover="this.play()"
-                onmouseout="this.pause()"></video>
+                onmouseout="this.pause()"
+                onclick="cambiar_video(this)"></video>
                 <span class="video-title">Tachyon Finding The Limit</span>
             </div>
             <div class="video-small">
                 <video class="vid-s" src="static/RESOURCE/VIDEO/The Thief and the Cobbler's Chase Scene.mp4" alt="video placeholder" controls
                 onmouseover="this.play()"
-                onmouseout="this.pause()"></video>
+                onmouseout="this.pause()"
+                onclick="cambiar_video(this)"></video>
                 <span class="video-title">The Thief and the Cobbler's Chase Scene</span>
             </div>
         </section>
     </main>
+    <script src="static/JS/script.js"></script>
 </body>
 
 </html>
