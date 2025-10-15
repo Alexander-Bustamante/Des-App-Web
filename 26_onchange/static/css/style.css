@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 140vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 140vh;
+    color: white;
+    padding: 3vh 30vh;
+    background-color: #9FC5F8;
+    margin-bottom: 5vh;
+}
+
+nav h1{
+    font-size: 5.5vh
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    width: 50vh;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 3.5vh;
+}
+
+.lugar_temperatura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lugar_temperatura h2{
+    font-size: 4.5vh;
+}
+
+.temperatura{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    align-items: center;
+}
+
+hr{
+    margin: 2vh 0;
+    padding: 1px;
+    background-color: black;
+}
+
+.clima_dias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clima_dias div{
+    display: flex;
+    width: 32vh;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.clima_dias div img{
+    height: 25vh;
+}
