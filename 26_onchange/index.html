@@ -22,9 +22,9 @@
             <h2>San Jose</h2>
             <div class="temperatura">
                 <p>show temperature in</p>
-                <select name="" id="tipo_temperatura">
-                    <option value="celsius">°C</option>
-                    <option value="fahrenheit">°F</option>
+                <select id="tipo_temperatura" onchange="convertir()">
+                    <option id="°C" value="celsius">°C</option>
+                    <option id="°F" value="fahrenheit">°F</option>
                 </select>
             </div>
         </section>
@@ -32,45 +32,45 @@
         <hr>
 
         <section class="clima_dias">
-            <div>
+            <div class="clima_cada_dia">
                 <h2>Today</h2>
                 <img src="static/resource/img/some_rain.png" alt="">
                 <p>some rain</p>
                 <div class="temperatura_dia">
-                    <p>24°</p>
-                    <p>18°</p>
+                    <span id="max">24°</span>
+                    <span id="min">18°</span>
                 </div>
             </div>
-            <div>
+            <div class="clima_cada_dia">
                 <h2>Tomorrow</h2>
                 <img src="static/resource/img/some_sun.png" alt="">
                 <p>some sun</p>
                 <div class="temperatura_dia">
-                    <p>27°</p>
-                    <p>19°</p>
+                    <span id="max2">27°</span>
+                    <span id="min2">19°</span>
                 </div>
             </div>
-            <div>
+            <div class="clima_cada_dia">
                 <h2>Friday</h2>
                 <img src="static/resource/img/some_clouds.png" alt="">
                 <p>some clouds</p>
                 <div class="temperatura_dia">
-                    <p>21°</p>
-                    <p>16°</p>
+                    <span id="max3">21°</span>
+                    <span id="min3">16°</span>
                 </div>
             </div>
-            <div>
+            <div class="clima_cada_dia">
                 <h2>Saturday</h2>
                 <img src="static/resource/img/some_sun.png" alt="">
                 <p>some sun</p>
                 <div class="temperatura_dia">
-                    <p>26°</p>
-                    <p>21°</p>
+                    <span id="max4">26°</span>
+                    <span id="min4">21°</span>
                 </div>
             </div>
 
         </section>
-        <div class="cookies">
+        <div id="cookies" class="cookies">
             <img src="static/resource/img/cookie.png" alt="">
             <div>
                 <h3>Stop! Cookie time</h3>
@@ -78,7 +78,7 @@
                     provide social media features and to analyse our traffic. <a href="#">Read More...</a>
                 </p>
             </div>
-            <button class="btn"></button>
+            <button class="btn" onclick="hide()">I Accept</button>
         </div>
     </main>
 
