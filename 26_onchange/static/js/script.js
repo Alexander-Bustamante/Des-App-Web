@@ -66,3 +66,7 @@ function hide(){
 
     cookie.remove();
 }
+
+function loading(){
+    alert("Loading weather report...")
+}
